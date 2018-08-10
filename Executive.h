@@ -14,8 +14,6 @@ class Executive
 		bool * XOR(std::bitset<48> Rn, std::bitset<48> Kn);
 		void f(std::bitset<32> Rn, std::bitset<32>& Rn1, std::bitset<32>& Ln0, std::bitset<32>& Ln, std::bitset<48> Kn);
 		void FinalPerm();
-		bool ** Combine(int size, bool * Holder[], bool input0[], bool input1[], bool input2[], bool input3[], bool input4[], bool input5[], bool input6[], bool input7[], bool input8[], bool input9[], bool input10[], bool input11[], bool input12[], bool input13[], bool input14[], bool input15[]);
-		bool ** Combine(int size, bool * Holder[], bool input0[], bool input1[], bool input2[], bool input3[], bool input4[], bool input5[], bool input6[], bool input7[], bool input8[], bool input9[], bool input10[], bool input11[], bool input12[], bool input13[], bool input14[], bool input15[], bool input16[]);
 
 	private:
 		std::string M, K;
