@@ -2,7 +2,6 @@
 #include <iostream>
 #include <bitset>
 #include <cmath>
-#include <sstream>
 using namespace std;
 Executive::Executive()
 {
@@ -304,7 +303,6 @@ void Executive::f(bitset<32> Rn, bitset<32>& Rn1, bitset<32>& Ln0, bitset<32>& L
 			//Columns must increment every 6 bits thus '+k*6'
 			Col[j]=XORFin[4-j+6*k];
 		}
-		//cout<<endl<<"["<<Row.to_ulong()<<"]["<<Col.to_ulong()<<"]";
 		switch(k)
 		{
 			case 0:
@@ -366,6 +364,6 @@ void Executive::FinalPerm()
 			Finalbit[63-i]=L16[IPFin[i/8][i%8]-33];
 		}
 	}
-	cout<<endl<<"Final result:"<<endl<<hex<<uppercase<<Finalbit.to_ulong();
+	cout<<"Final result:"<<endl<<hex<<uppercase<<Finalbit.to_ulong();
 }
 
